@@ -7,7 +7,7 @@ public class RunMyProgram {
     public static void main(String[] args) {
         World run;
 
-        run = (new A5_square()   );
+        run = (new A6_house()   );
         run.planeIcon = "plane.png";
         run.pictureFileName="fourred.png";
         run.HEIGHT=800;

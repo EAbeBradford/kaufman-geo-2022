@@ -4,8 +4,10 @@ public class A6_house extends World {
     public void go() {
         plane.isTrail = true;
         plane.pausetime = 0;
-
-      house();
+//        equitriangle(200);
+     // house();
+//        equitriangle(90);
+        square(200);
     }
 
     public void big() {
@@ -48,11 +50,11 @@ public class A6_house extends World {
     }
 
     public void square(int a) {
-        plane.move(a);
+        plane.move(a*2);
         plane.turn(90);
         plane.move(a);
         plane.turn(90);
-        plane.move(a);
+        plane.move(a*2);
         plane.turn(90);
         plane.move(a);
         plane.turn(90);
@@ -60,7 +62,15 @@ public class A6_house extends World {
 
     public void equitriangle(int b) {
 
-
+        plane.startingAngle(0);
+        plane.isTrail = true;
+        plane.trailWidth =12;
+        plane.move(b/2);
+        plane.turn(120);
+        plane.move(b);
+        plane.turn(120);
+        plane.move(b);
+        plane.turn(120);
     }
 
     public void rectangle(int a, int b) {
